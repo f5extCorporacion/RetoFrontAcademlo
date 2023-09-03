@@ -1,0 +1,165 @@
+/*Challenge realizado por estudiante Academlo
+-Franklim de jesus muñoz valverde
+-1107050440f@gmail.com
+-Pais Colombia
+*/
+:root{
+/*Colores primarios*/
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+/*color neutral*/
+/*(paragraphs)*/
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+/*(background, headings, buttons)*/
+--Very-light-gray: hsl(0, 0%, 95%);
+
+font-family: 'Lexend Deca', sans-serif;
+
+}
+*{
+    margin: 0;
+    height: auto;
+    top: 0;
+    border: 0;
+    padding: 1rem;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenerdorColumnas{
+    padding: 10px;
+    margin: 0;
+    
+}
+
+.cardItem1{
+    background: var(--Bright-orange);
+    border-radius:20px 20px 0 0;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap; 
+    align-content:flex-start;
+    width: 250px;
+}
+.icons{
+    
+
+}
+.circleIcon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+   
+}
+.titulos{
+    color: var(--Transparent-white);
+    font-size: 30px;
+    font-weight: 700;
+}
+.parrafos{
+    color: var(--Transparent-white);
+    font-size: 14px;
+    font-weight: 400;
+    white-space: pre-line;
+}
+.buton1{
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight:bolder;
+    width: 150px;
+    color: var(--Bright-orange);
+}
+.cardItem2{
+    background: var(--Dark-cyan);
+    border-radius:0 0 0 0;
+    display: flex;
+    flex-direction:column;
+    width: 250px;
+}
+.buton2{
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight:bolder;
+    width: 150px;
+    color: var(--Dark-cyan);
+}
+.cardItem3{
+    background: var(--Very-dark-cyan);
+    border-radius:0 0 0 0;
+    display: flex;
+    flex-direction:column;
+    border-radius: 0 0 20px 20px;
+    width: 250px;
+}
+.buton3{
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight:bolder;
+    width: 150px;
+    color: var(--Dark-cyan);
+}
+
+
+
+
+@media (max-width: 375px) {
+                body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .contenerdorColumnas{
+                padding: 1px;
+                margin: 0;
+                
+            }
+   
+      }
+  
+  
+  
+  
+  @media (min-width: 1025px) {
+            
+        body{
+            display: flex;
+            align-items:flex-start ;
+            justify-content:center;
+        }
+        .modal-content{
+            display: none;
+        }
+
+            .contenerdorColumnas{
+                display: flex;
+                align-items: flex-start;
+            } 
+            
+        .cardItem3{
+            background: var(--Very-dark-cyan);
+
+            display: flex;
+            flex-direction:column;
+            border-radius:  0  20px 20px  0;
+            width: 250px;
+        }
+        
+.cardItem1{
+    background: var(--Bright-orange);
+    border-radius:20px 0 0 20px;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap; 
+    align-content:flex-start;
+    width: 250px;
+}
+.buton1:hover{
+    background:var(--Dark-cyan);
+    color:var(--Transparent-white)
+}
+  }
